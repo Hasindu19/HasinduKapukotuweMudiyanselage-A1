@@ -9,6 +9,7 @@ public class Appointment {
         // Default constructor
     }
 
+    // Parameterized constructor
     public Appointment(String patientName, String patientMobile, String timeSlot, HealthProfessional doctor) {
         this.patientName = patientName;
         this.patientMobile = patientMobile;
@@ -16,6 +17,7 @@ public class Appointment {
         this.doctor = doctor;
     }
 
+    //Method to print details
     public void printDetails(){
         System.out.println("Patient Name: " + patientName);
         System.out.println("Patient Mobile: " + patientMobile);
@@ -23,6 +25,7 @@ public class Appointment {
         doctor.printDetails();
     }
 
+    //Method to get patient mobile number
     public Object getPatientMobile() {
         return patientMobile;
     }

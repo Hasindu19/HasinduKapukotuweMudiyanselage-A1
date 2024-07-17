@@ -2,8 +2,10 @@ import java.util.ArrayList;
 
 public class AssignmentOne {
 
+    //Create a arraylist named appointment
     private static ArrayList<Appointment> appointments = new ArrayList<>();
 
+    //Main method
     public static void main(String[] args) {
 
         // Part 3 – Using classes and objects
@@ -14,6 +16,13 @@ public class AssignmentOne {
         Specialist sp1 = new Specialist(4, "Dr. Karen", 8, "Cardiology");
         Specialist sp2 = new Specialist(5, "Dr. Julianne", 4, "Neurology");
 
+        /*
+        I got these information from
+        1. https://southportmetromedicalcentre.com.au
+        2. https://www.emsdh.com.au/doctors?speciality=All&title=
+        */
+
+        //Print health professionals details
         gp1.printDetails();
         System.out.println("------------------------------");
         gp2.printDetails();
@@ -31,19 +40,26 @@ public class AssignmentOne {
         createAppointment("Alice Brown", "1112223334", "14:30", sp1);
         createAppointment("Bob White", "4445556667", "16:00", sp2);
 
+        //print existing appointments
         printExistingAppointments();
         System.out.println("------------------------------");
+
+        //cancel a booking
         cancelBooking("1234567890");
+
+        //print existing appointments
         printExistingAppointments();
         System.out.println("------------------------------");
 
     }
 
+    //method to create an Appointment
     public static void createAppointment(String patientName, String mobilePhone, String timeSlot, HealthProfessional doctor) {
         Appointment newAppointment = new Appointment(patientName, mobilePhone, timeSlot, doctor);
         appointments.add(newAppointment);
     }
 
+    //method to print existing appointments
     public static void printExistingAppointments(){
         if(appointments.isEmpty()){
             System.out.println("No appointments found");
@@ -55,6 +71,7 @@ public class AssignmentOne {
         }
     }
 
+    //method to cancel a booking
     public static void cancelBooking(String patientMobile){
         for (Appointment appointment : appointments) {
             if (appointment.getPatientMobile().equals(patientMobile)) {
