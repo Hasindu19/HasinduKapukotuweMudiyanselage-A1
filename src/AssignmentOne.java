@@ -7,12 +7,12 @@ public class AssignmentOne {
     public static void main(String[] args) {
 
         // Part 3 – Using classes and objects
-        GeneralPractitioner gp1 = new GeneralPractitioner(1, "Dr. Ali", "General Medicine", "Implanon Cosmetics");
-        GeneralPractitioner gp2 = new GeneralPractitioner(2, "Dr. Brown", "General Medicine", "Pediatrics");
-        GeneralPractitioner gp3 = new GeneralPractitioner(3, "Dr. White", "General Medicine", "Geriatrics");
+        GeneralPractitioner gp1 = new GeneralPractitioner(1, "Dr. Ali", 10, "Family Medicine");
+        GeneralPractitioner gp2 = new GeneralPractitioner(2, "Dr. Sergey", 25, "Pediatrics");
+        GeneralPractitioner gp3 = new GeneralPractitioner(3, "Dr. Valerie", 5, "Geriatrics");
 
-        Specialist sp1 = new Specialist(4, "Dr. Green", "Cardiology", "Heart Surgery");
-        Specialist sp2 = new Specialist(5, "Dr. Blue", "Neurology", "Brain Surgery");
+        Specialist sp1 = new Specialist(4, "Dr. Karen", 8, "Cardiology");
+        Specialist sp2 = new Specialist(5, "Dr. Julianne", 4, "Neurology");
 
         gp1.printDetails();
         System.out.println("------------------------------");

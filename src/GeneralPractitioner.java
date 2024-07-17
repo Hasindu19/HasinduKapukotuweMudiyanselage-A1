@@ -9,8 +9,8 @@ public class GeneralPractitioner extends HealthProfessional{
     }
 
     // Parameterized constructor
-    public GeneralPractitioner(int id, String name, String department, String interest){
-        super(id, name, department);
+    public GeneralPractitioner(int id, String name, int yearsOfExperience, String interest){
+        super(id, name, yearsOfExperience);
         this.interest = interest;
     }
 

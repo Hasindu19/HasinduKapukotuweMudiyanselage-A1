@@ -7,8 +7,8 @@ public class Dietitian extends HealthProfessional {
         this.dietitianSpecialty = "";
     }
 
-    public Dietitian(int id, String name, String basicInfo, String dietitianSpecialty) {
-        super(id, name, basicInfo);
+    public Dietitian(int id, String name, int yearsOfExperience, String dietitianSpecialty) {
+        super(id, name, yearsOfExperience);
         this.dietitianSpecialty = dietitianSpecialty;
     }
 

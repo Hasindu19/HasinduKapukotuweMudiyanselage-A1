@@ -8,8 +8,8 @@ public class Specialist extends HealthProfessional {
     }
 
     // Parameterized constructor
-    public Specialist(int id, String name, String department, String expertise) {
-        super(id, name, department);
+    public Specialist(int id, String name, int yearsOfExperience, String expertise) {
+        super(id, name, yearsOfExperience);
         this.expertise = expertise;
     }
 
