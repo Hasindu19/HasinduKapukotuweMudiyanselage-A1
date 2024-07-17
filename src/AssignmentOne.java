@@ -46,6 +46,7 @@ public class AssignmentOne {
 
         //cancel a booking
         cancelBooking("1234567890");
+        System.out.println("------------------------------");
 
         //print existing appointments
         printExistingAppointments();
